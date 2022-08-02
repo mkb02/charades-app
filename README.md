@@ -17,3 +17,7 @@ Here are the tutorials I referenced:
 Here are the bootstrap resources I used:
   - https://getbootstrap.com/docs/4.0/components/modal/
   - https://getbootstrap.com/docs/4.3/getting-started/introduction/
+
+What I learned:
+  - Gained a deeper understanding of Python and HTML, and how they can work together to create a webapp
+  - How to debug via standard debug techniques, in addition to using the error log
