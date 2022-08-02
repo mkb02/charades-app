@@ -1,0 +1,22 @@
+<html style="display: table; margin: auto;">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body style="vertical-align: center; text-align:center; font-family: Times New Roman">
+        <title>View Current List</title>
+        <br>
+        <h1><b>Charades Prompts Application</b></h1>
+        <h3><b>View Current List</b></h3>
+        <br>
+        {% for item in result %}
+            <a style="font-size:17px;">{{item}}<br></a>
+        {% endfor %}
+        <br>
+        <b><a style="font-size:17px;" href="/">Click here to go back to home</a></b>
+        <br>
+    </body>
+</html>
