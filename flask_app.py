@@ -1,5 +1,5 @@
-from flask import Flask, request, flash, redirect, render_template, url_for
-from processing import select_prompt, add_to_list, display_list, remove_from_list, display_data, remove_all, restore_original, size
+from flask import Flask, request, render_template
+from processing import select_prompt, add_to_list, remove_from_list, display_data, remove_all, restore_original, size, restore_before
 
 app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8zvaopslkaipalay9220)(\n\xec]/'
@@ -65,6 +65,9 @@ def adder_page():
 
         elif request.form.get('action') == 'Restore':
             restore_original()
+
+        elif request.form.get('action') == 'Restore Before':
+            restore_before()
 
     return render_template("index.html")
 
