@@ -2,9 +2,13 @@ import pandas as pd
 import random
 
 data = ['fire', 'tree', 'bird', 'whistle', 'clock', 'rainbow', 'winning a race', 'winning a trophy', 'losing a race', 'drawing', 'painting', 'singing', 'opera', "frankenstein's monster"]
+current = data.copy();
 
 # function to add a new prompt to the list of prompts (append to the list)
 def add_to_list(prompt):
+  if (len(data) == 0):
+      current.clear()
+
   to_add_without_spaces = prompt.strip()
 
   # make sure length > 1 and less than 100 && no duplicates
@@ -13,6 +17,7 @@ def add_to_list(prompt):
   elif 0 < len(to_add_without_spaces) <= 100:
     # take away any leading or ending whitespaces
     data.append(to_add_without_spaces)
+    current.append(to_add_without_spaces)
     return 1
   elif len(to_add_without_spaces) <= 0:
     return 2 # print("Empty input. Please try again.")
@@ -60,6 +65,15 @@ def restore_original():
     if len(data) == 0:
         new = ['fire', 'tree', 'bird', 'whistle', 'clock', 'rainbow', 'winning a race', 'winning a trophy', 'losing a race', 'drawing', 'painting', 'singing', 'opera', "frankenstein's monster"]
         data.extend(new)
+    else:
+        data.clear()
+        new = ['fire', 'tree', 'bird', 'whistle', 'clock', 'rainbow', 'winning a race', 'winning a trophy', 'losing a race', 'drawing', 'painting', 'singing', 'opera', "frankenstein's monster"]
+        data.extend(new)
+
+# function to restore list from before deletion
+def restore_before():
+    if len(data) == 0:
+        data.extend(current)
 
 # function for size of list
 def size():
