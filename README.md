@@ -2,6 +2,15 @@
 
 Welcome to my Charades Web App! This application was developed primarily using Python and HTML/CSS. It can be accessed via http://mk1.pythonanywhere.com/ and can be used by anyone. To use this app, simply following the instructions given for each button. Enjoy!
 
+Functionalities available for the Web App:
+  - Randomly generate a prompt
+  - View a list of current prompts
+  - Add additional prompts to the list
+  - Remove prompts from the list
+  - Remove all current prompts
+  - Restore the prompt list from immediately before deletion
+  - Restore the original sample prompt list
+
 Here are some potential next steps I plan on taking regarding this web app:
   - View prompts as a scrollable list 
   - Put all prompts into an online database
