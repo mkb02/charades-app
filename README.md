@@ -13,7 +13,7 @@ Functionalities available for the Web App:
 
 Here are some potential next steps I plan on taking regarding this web app:
   - View prompts as a scrollable list 
-  - Put all prompts into a (permanent) online database, ensure prompts are there for the longterm
+  - Put all prompts into a (permanent) online database; ensure prompts are there for the longterm
   - Filter out for anything inappropriate
   - Import a list of prompts + add that way
   - Make a separate instance for each time the app is used (save only to current browser)
