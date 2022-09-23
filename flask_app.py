@@ -4,7 +4,7 @@ from processing import select_prompt, add_to_list, remove_from_list, display_dat
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
-@app.route("/", methods=["GET", "POST"])
+@app.route("/", methods=["POST"])
 
 def adder_page():
     if request.method == "POST":
