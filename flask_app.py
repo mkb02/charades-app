@@ -2,7 +2,6 @@ from flask import Flask, request, render_template
 from processing import select_prompt, add_to_list, remove_from_list, display_data, remove_all, restore_original, size, restore_before
 
 app = Flask(__name__)
-app.secret_key = b'_5#y2L"F4Q8zvaopslkaipalay9220)(\n\xec]/'
 app.config["DEBUG"] = True
 
 @app.route("/", methods=["GET", "POST"])
